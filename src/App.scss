@@ -1,0 +1,30 @@
+@use "./styles/colors" as *;
+@use "./styles/typography" as *;
+@use "./styles/variables" as *;
+@use "./styles/mixins" as *;
+
+body, html{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: $font-stack;
+    color: $color-primary-grey;
+}
+
+h1, h2, h3, h4, p {
+    padding: 0;
+    margin: 0;
+}
+
+h1 {
+    font-weight: 400;
+}
+
+h2, h3, h4 {
+    font-weight: 500;
+}
+
+a {
+    text-decoration: none;
+    color: $color-primary-grey;
+}

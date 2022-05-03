@@ -1,0 +1,37 @@
+
+//Main font
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/font/Inter-Light.ttf');
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/font/Inter-Regular.ttf');
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/font/Inter-Medium.ttf');
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/font/Inter-Bold.ttf');
+    font-weight: 700;
+}
+
+@font-face {
+    font-family: 'Inter';
+    src: url('../assets/font/Inter-ExtraBold.ttf');
+    font-weight: 800;
+}
+
+
+$font-stack: 'Inter', sans-serif; 
+$root-font-size: 16px;
+

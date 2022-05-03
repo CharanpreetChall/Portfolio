@@ -1,0 +1,32 @@
+@use "../../styles/colors" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.hero {
+    height: 20rem;
+    width: 38rem;
+    margin: 0 auto;
+    text-align: center;
+    padding: 6rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+
+    &__heading {
+        font-size: 3rem;
+    }
+
+    &__links {
+        width: 10rem;
+        display: flex;
+        justify-content: space-between;
+        margin: 0 auto;
+    }
+
+    &__image{
+        width: 3.2rem;
+        padding: 0.5rem;
+        box-shadow: 0 1px 12px -6px gray;
+    }
+}
