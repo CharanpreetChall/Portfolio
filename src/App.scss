@@ -8,7 +8,7 @@ body, html{
     padding: 0;
     box-sizing: border-box;
     font-family: $font-stack;
-    color: $color-primary-grey;
+    color: $color-text-grey;
 }
 
 h1, h2, h3, h4, p {
@@ -20,11 +20,29 @@ h1 {
     font-weight: 400;
 }
 
-h2, h3, h4 {
+h2{
+    font-size: 2.2rem;
+}
+
+h4 {
     font-weight: 500;
+}
+
+h2 {
+    font-weight: 400;
+}
+
+h3 {
+    font-weight: 600;
+    font-size: 1.5rem;
+    letter-spacing: 0.5rem;
+}
+
+p{
+    font-weight: 300;
 }
 
 a {
     text-decoration: none;
-    color: $color-primary-grey;
+    color: $color-text-grey;
 }

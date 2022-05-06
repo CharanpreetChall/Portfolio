@@ -5,20 +5,30 @@
 
 
 .nav {
-    box-shadow: 0 1px 8px -4px gray;
-    padding: 2rem 6rem;
+    box-shadow: 0 1px 8px -4px grey;
     display: flex;
     justify-content: space-between;
+    padding: 1.5rem;
+
+    @include desktop{
+        padding: 2rem 6rem;
+    }
+    
 
     &__logo{
-        color: $color-primary-black;
+        color: $color-text-black;
         font-weight: bold;
         flex-grow: 5;
+        letter-spacing: 0.5rem;
     }
 
     &__list{
-        flex-grow: 1;
-        display: flex;
-        justify-content: space-between;
+        display: none;
+
+        @include desktop{
+            flex-grow: 1;
+            display: flex;
+            justify-content: space-between;
+        }
     }
 }

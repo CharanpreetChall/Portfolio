@@ -3,9 +3,9 @@ import React from 'react'
 function ProjectCard() {
   return (
     <div>
-        
+
     </div>
   )
 }
 
-export default ProjectCard
+export default ProjectCard;

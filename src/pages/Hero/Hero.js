@@ -1,6 +1,6 @@
 import './Hero.scss';
 import github from '../../assets/images/github.png';
-import linkedin from '../../assets/images/linkedin.png'
+import linkedin from '../../assets/images/linkedin.png';
 
 function Hero() {
     return (

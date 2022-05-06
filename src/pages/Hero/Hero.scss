@@ -4,29 +4,43 @@
 @use "../../styles/mixins" as *;
 
 .hero {
-    height: 20rem;
-    width: 38rem;
-    margin: 0 auto;
+    height: 22rem;
+    // width: 18rem;
+    // margin: 0 auto;
     text-align: center;
-    padding: 6rem;
+    padding: 3rem 1rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
 
+    @include desktop {
+        height: 20rem;
+        width: 38rem;
+        padding: 4rem 2rem;
+    }
+
     &__heading {
-        font-size: 3rem;
+        font-size: 1.5rem;
+        @include desktop {
+            font-size: 3rem;
+        }
     }
 
     &__links {
         width: 10rem;
         display: flex;
         justify-content: space-between;
-        margin: 0 auto;
+        margin: 1rem auto;
+
+        @include desktop{
+            margin: 0 auto;
+        }
     }
 
-    &__image{
+    &__image {
         width: 3.2rem;
         padding: 0.5rem;
         box-shadow: 0 1px 12px -6px gray;
+        border-radius: 0.5rem;
     }
 }

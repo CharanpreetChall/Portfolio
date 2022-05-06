@@ -1,0 +1,14 @@
+@use "../../styles/colors" as *;
+@use "../../styles/typography" as *;
+@use "../../styles/variables" as *;
+@use "../../styles/mixins" as *;
+
+.footer{
+    &__text{
+        background-color: $color-background-dark-purple;
+        color: $color-text-purple;
+        font-size: 1rem;
+        padding: 4rem 0;
+        text-align: center;
+    }
+}
