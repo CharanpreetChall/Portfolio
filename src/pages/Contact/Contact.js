@@ -19,10 +19,6 @@ function Contact() {
                             <p className="contact__info">charanpreetchall@gmail.com</p>
                         </a>
                     </div>
-                    <div className="contact__type">
-                        <h2 className="contact__name">Phone</h2>
-                        <p className="contact__info">647-667-0327</p>
-                    </div>
                     <div className="contact__links">
                         <a href='https://github.com/CharanpreetChall' target="_blank" rel="noopener noreferrer">
                             <img className="contact__icon icon" src={github} alt="github" />

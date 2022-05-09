@@ -46,7 +46,7 @@
 
     &__details {
         width: 17rem;
-        height: 13rem;
+        height: 8.5rem;
         padding: 2rem 1rem;
         display: flex;
         flex-direction: column;
@@ -55,7 +55,7 @@
 
         @include tablet {
             width: 32rem;
-            height: 20rem;
+            height: 12rem;
             padding: 4rem 0;
         }
 
