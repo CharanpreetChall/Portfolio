@@ -12,6 +12,10 @@
     justify-content: space-between;
     align-items: center;
 
+    @include tablet {
+        padding: 6rem 0 1rem;
+    }
+
     @include desktop {
         padding: 6rem;
     }
@@ -31,30 +35,43 @@
         align-items: center;
         overflow: hidden;
 
-        @include desktop {
+        @include tablet{
+            width: 45rem;
             flex-direction: row;
+            margin-bottom: 5rem;
+        }
+
+        @include desktop {
             width: 67rem;
         }
     }
 
     &__details {
-        height: 11rem;
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        padding: 3rem 1rem;
+        padding: 2rem 1rem;
         order: 2;
 
+        @include tablet {
+            padding: 6rem 2rem;
+            order: 0;
+        }
+
         @include desktop {
-            height: 10rem;
+            // height: 10rem;
             padding: 5rem 3rem 5rem 4rem;
-            order: 1;
+            
         }
     }
 
     &__image {
         width: 16rem;
         padding: 2.5rem 2rem;
+
+        @include tablet{
+            padding: 8.2rem 3.25rem;
+        }
 
 
         @include desktop {
@@ -68,17 +85,35 @@
 
         &--blue {
             background-color: $color-background-dark-blue;
+            padding: 1.2rem 0;
         }
     }
 
+    &__info {
+        padding: 1rem 0 1.25rem;
+    }
+
     &__button {
-        margin-top: 0.5rem;
+        font-size: 0.75rem;
         text-align: center;
-        width: 10rem;
+        width: 8rem;
         padding: 1rem;
         border-radius: 2rem;
         border: none;
-        background-color: $color-background-salmon;
         color: white;
+
+        @include tablet{
+            width: 10rem;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+        }
+    }
+
+    &__button-pink{
+        background-color: $color-button-salmon;
+    }
+
+    &__button-blue{
+        background-color: $color-button-blue;
     }
 }

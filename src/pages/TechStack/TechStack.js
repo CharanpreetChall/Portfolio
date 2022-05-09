@@ -15,7 +15,7 @@ import npm from '../../assets/images/npm.png';
 
 function TechStack() {
     return (
-        <section className="tech">
+        <section className="tech" id="tech">
             <h3 className="tech__heading">TECH STACK</h3>
             <div className="tech__stack">
                 <div className="tech__info">
@@ -42,7 +42,7 @@ function TechStack() {
                     <img src={node} className="tech__image" alt='node' />
                     <h4>NODE</h4>
                 </div>
-                <div className="tech__info tech__npm">
+                <div className="tech__info">
                     <img src={npm} className="tech__image tech__image-bigger" alt='npm' />
                     <h4>NODE PACKAGE MANAGER</h4>
                 </div>
@@ -52,7 +52,7 @@ function TechStack() {
                 </div>
                 <div className="tech__info">
                 <img src={axios} className="tech__image tech__image-bigger" alt='axios' />
-                    <h4 className="tech__axios-text">AXIOS</h4>
+                    <h4>AXIOS</h4>
                 </div>
                 <div className="tech__info">
                 <img src={express} className="tech__image tech__image-bigger" alt='express' />

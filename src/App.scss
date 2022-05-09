@@ -3,7 +3,8 @@
 @use "./styles/variables" as *;
 @use "./styles/mixins" as *;
 
-body, html{
+body,
+html {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
@@ -11,38 +12,84 @@ body, html{
     color: $color-text-grey;
 }
 
-h1, h2, h3, h4, p {
+h1,
+h2,
+h3,
+h4,
+p {
     padding: 0;
     margin: 0;
 }
 
 h1 {
+    font-size: 1.25rem;
     font-weight: 400;
-}
 
-h2{
-    font-size: 2.2rem;
-}
-
-h4 {
-    font-weight: 500;
+    @include tablet {
+        font-size: 3rem;
+    }
 }
 
 h2 {
+    @include tablet {
+        font-size: 2.2rem;
+    }
+}
+
+h4 {
+    font-size: 0.8rem;
+    font-weight: 500;
+    letter-spacing: 0.1rem;
+
+    @include tablet {
+        font-size: 1.1rem;
+        letter-spacing: 0.2rem;
+    }
+}
+
+h2 {
+    font-size: 1.25rem;
     font-weight: 400;
+
+    @include tablet{
+        font-size: 2.5rem;
+    }
 }
 
 h3 {
     font-weight: 600;
-    font-size: 1.5rem;
+    font-size: 1rem;
     letter-spacing: 0.5rem;
+
+    @include tablet {
+        font-size: 1.75rem;
+    }
 }
 
-p{
+p {
+    font-size: 0.9rem;
     font-weight: 300;
+
+    @include tablet {
+        font-size: 1.1rem;
+        line-height: 1.75rem;
+    }
 }
 
 a {
     text-decoration: none;
     color: $color-text-grey;
+
+    @include tablet{
+        font-size: 1rem;
+    }
+}
+
+.icon {
+    width: 3.2rem;
+    padding: 0.5rem;
+
+    @include tablet{
+        width: 4.5rem;
+    }
 }

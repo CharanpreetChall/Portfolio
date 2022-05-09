@@ -13,9 +13,9 @@ function App() {
     <Nav />
     {/* <Switch> */}
       <Hero exact path="/" component={Hero} />
-      <Projects exact path="/" component={Projects} />
-      <TechStack exact path="/" component={TechStack} />
-      <Contact exact path="/" component={Contact} />
+      <Projects exact path="/projects" component={Projects} />
+      <TechStack exact path="/tech" component={TechStack} />
+      <Contact exact path="/contact" component={Contact} />
     {/* </Switch> */}
       <Footer />
     </BrowserRouter>

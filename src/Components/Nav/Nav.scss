@@ -3,32 +3,96 @@
 @use "../../styles/variables" as *;
 @use "../../styles/mixins" as *;
 
-
 .nav {
     box-shadow: 0 1px 8px -4px grey;
     display: flex;
     justify-content: space-between;
-    padding: 1.5rem;
+    padding: 1.25rem 1.5rem;
 
-    @include desktop{
+    @include tablet {
+        padding: 2rem;
+    }
+
+    @include desktop {
         padding: 2rem 6rem;
     }
-    
 
-    &__logo{
+    &__logo {
+        font-size: 0.75rem;
         color: $color-text-black;
         font-weight: bold;
         flex-grow: 5;
         letter-spacing: 0.5rem;
+
+        @include tablet {
+            font-size: 1rem;
+        }
     }
 
-    &__list{
+    &__bars {
+        cursor: pointer;
+        display: block;
+        position: absolute;
+        top: 1.25rem;
+        right: 1rem;
+
+        @include tablet {
+            display: none;
+        }
+    }
+
+    &__menu {
         display: none;
 
-        @include desktop{
+        @include tablet {
             flex-grow: 1;
             display: flex;
             justify-content: space-between;
+        }
+    }
+
+    &__list{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        width: 100vw;
+        right: -2.25rem;
+        top: 3.25rem;
+        height: 25rem;
+        background-color: white;
+
+        @include tablet{
+            width: 19rem;
+            height: 1rem;
+            top: 2rem;
+            right: 2rem;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+
+        @include desktop {
+            right: 6rem;
+        }
+    }
+
+    &__link{
+        padding-bottom: 0.75rem;
+
+        @include tablet{
+            padding-bottom: 0;
+        }
+    }
+
+    &__menu-mobile {
+        display: flex;
+    }
+
+    &__open {
+        display: flex;
+        flex-direction: column;
+
+        @include tablet {
+            display: none;
         }
     }
 }

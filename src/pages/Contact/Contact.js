@@ -7,7 +7,7 @@ import lines from '../../assets/images/horizontal-lines.png';
 
 function Contact() {
     return (
-        <section className="contact">
+        <section className="contact" id="contact">
             <h3 className="contact__heading">CONTACT</h3>
 
             <div className="contact__card">
@@ -15,7 +15,9 @@ function Contact() {
                 <div className="contact__details">
                     <div className="contact__type">
                         <h2 className="contact__name">Email</h2>
-                        <p className="contact__info">charanpreetchall@gmail.com</p>
+                        <a href="mailto: charanpreetchall@gmail.com" target="_blank">
+                            <p className="contact__info">charanpreetchall@gmail.com</p>
+                        </a>
                     </div>
                     <div className="contact__type">
                         <h2 className="contact__name">Phone</h2>
@@ -23,10 +25,10 @@ function Contact() {
                     </div>
                     <div className="contact__links">
                         <a href='https://github.com/CharanpreetChall' target="_blank">
-                            <img className="contact__icon" src={github} />
+                            <img className="contact__icon icon" src={github} />
                         </a>
                         <a href='https://www.linkedin.com/in/charanpreet-chall-b1194037/' target="_blank">
-                            <img className="contact__icon" src={linkedin} />
+                            <img className="contact__icon icon" src={linkedin} />
                         </a>
                     </div>
                 </div>

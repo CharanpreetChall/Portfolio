@@ -1,21 +1,46 @@
-import React from 'react';
+import React, { Component } from 'react';
+import { NavMenu } from './NavMenu';
 import './Nav.scss';
-import { Link, NavLink } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { FaBars, FaTimes } from 'react-icons/fa';
 
-function Nav() {
-    return (
-        <nav className="nav">
 
-            <Link className="nav__logo" to='/'>CHARANPREET</Link>
+export class Nav extends Component {
 
-            <div className="nav__list">
-                <NavLink className="nav__link" to='/' >PROJECTS</NavLink>
-                <NavLink className="nav__link" to='/'>TECH STACK</NavLink>
-                <NavLink className="nav__link" to='/'>CONTACT</NavLink>
-            </div>
+    state = {
+        clicked: false
+    }
 
-        </nav>
-    )
+    handleClick = () => {
+        this.setState({ clicked: !this.state.clicked })
+    }
+
+    render() {
+
+        return (
+            <nav className="nav">
+
+                <NavLink className="nav__logo" to='/'>CHARANPREET</NavLink>
+
+                <div>
+                    <div className="nav__bars" onClick={this.handleClick} >
+                        {this.state.clicked ?
+                            <div className="nav__open">
+                                <FaTimes />
+                                <NavMenu/>
+                            </div>
+                            :
+                            <FaBars />
+                        }
+                    </div>
+                </div>
+
+                <div className="nav__menu">
+                    <NavMenu/>
+                </div>
+            </nav>
+        )
+    }
 }
 
 export default Nav;
