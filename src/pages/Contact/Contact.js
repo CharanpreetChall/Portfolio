@@ -15,7 +15,7 @@ function Contact() {
                 <div className="contact__details">
                     <div className="contact__type">
                         <h2 className="contact__name">Email</h2>
-                        <a href="mailto: charanpreetchall@gmail.com" target="_blank">
+                        <a href="mailto: charanpreetchall@gmail.com" target="_blank" rel="noopener noreferrer">
                             <p className="contact__info">charanpreetchall@gmail.com</p>
                         </a>
                     </div>
@@ -24,11 +24,11 @@ function Contact() {
                         <p className="contact__info">647-667-0327</p>
                     </div>
                     <div className="contact__links">
-                        <a href='https://github.com/CharanpreetChall' target="_blank">
-                            <img className="contact__icon icon" src={github} />
+                        <a href='https://github.com/CharanpreetChall' target="_blank" rel="noopener noreferrer">
+                            <img className="contact__icon icon" src={github} alt="github" />
                         </a>
-                        <a href='https://www.linkedin.com/in/charanpreet-chall-b1194037/' target="_blank">
-                            <img className="contact__icon icon" src={linkedin} />
+                        <a href='https://www.linkedin.com/in/charanpreet-chall-b1194037/' target="_blank" rel="noopener noreferrer">
+                            <img className="contact__icon icon" src={linkedin} alt="linkedin"/>
                         </a>
                     </div>
                 </div>

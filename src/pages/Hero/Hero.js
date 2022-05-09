@@ -10,11 +10,11 @@ function Hero() {
             <h4 className="hero__subheading">FRONT END WEB DEVELOPER</h4>
             <p className="hero__text">My affinity for content creation and problem-solving sustained my career as a filmmaker for over ten years in India and Canada. I  have now expanded my reach by learning to create on the web!</p>
             <div className="hero__links">
-                <a href='https://github.com/CharanpreetChall' target="_blank">
-                    <img className="hero__icon icon" src={github} />
+                <a href='https://github.com/CharanpreetChall' target="_blank" rel="noopener noreferrer">
+                    <img className="hero__icon icon" src={github} alt="github"/>
                 </a>
-                <a href='https://www.linkedin.com/in/charanpreet-chall-b1194037/' target="_blank">
-                    <img className="hero__icon icon" src={linkedin} />
+                <a href='https://www.linkedin.com/in/charanpreet-chall-b1194037/' target="_blank" rel="noopener noreferrer">
+                    <img className="hero__icon icon" src={linkedin} alt="linkedin"/>
                 </a>
             </div>
         </section>
