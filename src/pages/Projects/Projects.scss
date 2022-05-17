@@ -54,29 +54,28 @@
         order: 2;
 
         @include tablet {
-            padding: 6rem 2rem;
+            padding: 3rem 2rem;
             order: 0;
         }
 
         @include desktop {
-            // height: 10rem;
-            padding: 5rem 3rem 5rem 4rem;
+            padding: 3rem 3rem 3rem 4rem;
             
         }
     }
 
     &__image {
-        width: 16rem;
+        width: 18rem;
         padding: 2.5rem 2rem;
 
         @include tablet{
-            padding: 8.2rem 3.25rem;
+            width: 20rem;
+            padding: 4.5rem 1.25rem;
         }
 
-
         @include desktop {
-            width: 26rem;
-            padding: 5rem 3.75rem;
+            width: 28rem;
+            padding: 4.5rem 2.75rem;
         }
 
         &--pink {
@@ -86,6 +85,19 @@
         &--blue {
             background-color: $color-background-dark-blue;
             padding: 1.2rem 0;
+        }
+
+        &--big{
+            width: 20rem;
+
+            @include tablet{
+                padding: 7.3rem 1.25rem;
+            }
+
+            @include desktop {
+                width: 30rem;
+                padding: 4.5rem 1.75rem;
+            }
         }
     }
 
