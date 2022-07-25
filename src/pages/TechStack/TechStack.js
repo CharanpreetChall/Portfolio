@@ -7,7 +7,7 @@ import node from '../../assets/images/node.png';
 import mysql from '../../assets/images/mysql.png';
 import express from '../../assets/images/express.png';
 import reactrouter from '../../assets/images/reactrouter.png';
-import bem from '../../assets/images/bem.png';
+import redux from '../../assets/images/redux.png';
 import axios from '../../assets/images/axios.png';
 import sass from '../../assets/images/sass.png';
 import npm from '../../assets/images/npm.png';
@@ -21,6 +21,10 @@ function TechStack() {
                 <div className="tech__info">
                     <img src={react} className="tech__image" alt='react' />
                     <h4>REACT</h4>
+                </div>
+                <div className="tech__info">
+                <img src={redux} className="tech__image " alt='redux' />
+                    <h4>REDUX</h4>
                 </div>
                 <div className="tech__info">
                     <img src={js} className="tech__image" alt='js' />
@@ -51,7 +55,7 @@ function TechStack() {
                     <h4>REACT ROUTER</h4>
                 </div>
                 <div className="tech__info">
-                <img src={axios} className="tech__image tech__image-bigger" alt='axios' />
+                <img src={axios} className="tech__image tech__image-bigger tech__axios" alt='axios' />
                     <h4>AXIOS</h4>
                 </div>
                 <div className="tech__info">
@@ -62,10 +66,7 @@ function TechStack() {
                 <img src={mysql} className="tech__image" alt='mysql' />
                     <h4>MYSQL</h4>
                 </div>
-                <div className="tech__info">
-                <img src={bem} className="tech__image" alt='bem' />
-                    <h4>BEM</h4>
-                </div>
+                
             </div>
         </section>
     )

@@ -8,7 +8,7 @@
     width: 18rem;
     margin: 0 auto;
     text-align: center;
-    padding: 3rem 1rem;
+    padding: 6.5rem 1rem 3rem;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
@@ -16,13 +16,13 @@
     @include tablet {
         height: 25rem;
         width: 40rem;
-        padding: 5rem 0;
+        padding: 9rem 0 5rem;
     }
 
     @include desktop {
         height: 23rem;
         width: 38rem;
-        padding: 4rem 2rem;
+        padding: 8.5rem 2rem 4rem;
     }
 
     &__links {

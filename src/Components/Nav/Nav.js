@@ -20,14 +20,16 @@ export class Nav extends Component {
         return (
             <nav className="nav">
 
-                <NavLink className="nav__logo" to='/'>CHARANPREET</NavLink>
+                <NavLink className="nav__logo" to="/" onClick={() => {
+                    window.scrollTo({ top: 0, left: 0, behavior: 'smooth' });
+                }}>CHARANPREET</NavLink>
 
                 <div>
                     <div className="nav__bars" onClick={this.handleClick} >
                         {this.state.clicked ?
                             <div className="nav__open">
                                 <FaTimes />
-                                <NavMenu/>
+                                <NavMenu />
                             </div>
                             :
                             <FaBars />
@@ -36,7 +38,7 @@ export class Nav extends Component {
                 </div>
 
                 <div className="nav__menu">
-                    <NavMenu/>
+                    <NavMenu />
                 </div>
             </nav>
         )
